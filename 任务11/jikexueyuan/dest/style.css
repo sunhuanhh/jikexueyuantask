@@ -1,0 +1,1301 @@
+html,
+body,
+div,
+p,
+span,
+ul,
+li,
+a,
+img,
+header,
+footer,
+nav,
+section,
+i,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd,
+strong {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+}
+html,
+body {
+  height: 100%;
+  background: #f5f5f5;
+  font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, sans-serif;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  border: 0;
+}
+.w-1000 {
+  width: 1000px;
+  margin: 0 auto;
+  clear: both;
+}
+.mar-t20 {
+  margin-top: 20px !important;
+}
+.mar-b40 {
+  margin-bottom: 40px !important;
+}
+.col-35b558 {
+  color: #35b558 !important;
+}
+.arrow-icon {
+  width: 8px;
+  height: 8px;
+  border-top: 1px solid #c1c1c1;
+  border-left: 1px solid #c1c1c1;
+  display: inline-block;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+.wrapper {
+  min-width: 1000px;
+  min-height: 800px;
+  height: 100%;
+  position: relative;
+}
+/*start header*/
+header {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background: #fff;
+  border-bottom: 1px solid #ececec;
+  /*overflow: hidden;*/
+}
+.logo {
+  width: 109px;
+  height: 60px;
+  display: inline-block;
+  float: left;
+  margin-right: 60px;
+}
+.logo img {
+  width: 109px;
+  height: auto;
+  margin-top: 10px;
+}
+nav {
+  float: left;
+}
+.header-nav li {
+  position: relative;
+  float: left;
+  margin-right: 50px;
+  font-size: 14px;
+  color: #333;
+}
+.header-nav li:hover {
+  color: #35b558;
+  cursor: pointer;
+}
+.header-nav li:hover .submenu {
+  display: block;
+}
+.header-nav li:hover .arrow-icon {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-bottom: -2px;
+  border-top: 1px solid #35b558;
+  border-left: 1px solid #35b558;
+  -webkit-animation: arrowRotate 1s ease normal;
+  -moz-animation: arrowRotate 1s ease normal;
+  -ms-animation: arrowRotate 1s ease normal;
+  animation: arrowRotate 1s ease normal;
+}
+.header-nav li i {
+  margin-left: 5px;
+}
+.header-nav li i.arrow-icon {
+  margin-bottom: 2px;
+}
+.header-nav .submenu {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 280px;
+  background: #fff;
+  font-size: 12px;
+  color: #666;
+  display: none;
+}
+.header-nav .submenu h3 {
+  height: 28px;
+  line-height: 28px;
+  margin: 10px 0;
+  padding: 0 15px;
+  background: #fafafa;
+  font-weight: 300;
+}
+.header-nav .submenu a {
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  padding: 0 15px;
+  color: #333;
+}
+.header-nav .submenu a:hover {
+  color: #35b558;
+}
+.header-nav .vip-lesson {
+  padding: 10px 0;
+}
+.header-nav .vip-lesson a {
+  height: 40px;
+  line-height: 40px;
+  display: block;
+  color: #666;
+}
+.header-nav .vip-lesson a:hover {
+  background: #f8f8f8;
+  color: #35b558;
+}
+.header-nav .vip-lesson a span {
+  color: #bbb;
+  float: right;
+}
+@keyframes arrowRotate {
+  0% {
+    margin-bottom: 2px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+  }
+  100% {
+    -webkit-transform: rotate(405deg);
+    -moz-transform: rotate(405deg);
+    -ms-transform: rotate(405deg);
+    -o-transform: rotate(405deg);
+    transform: rotate(405deg);
+  }
+}
+.school-list i,
+.vip-lesson i {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  margin-right: 10px;
+  background: url(../images/allicon.png) no-repeat 0 0;
+  background-size: 64px 64px;
+}
+.school-list .web-icon,
+.vip-lesson .web-icon {
+  background-position: -15px -27px;
+}
+.school-list .android-icon,
+.vip-lesson .android-icon {
+  background-position: -45px -14px;
+}
+.school-list i.python-icon,
+.school-list i.go-icon,
+.school-list i.ios-icon,
+.school-list i.wechat-icon {
+  background: url(../images/allicon4.png) 0 0 no-repeat;
+  background-size: 16px 148px;
+}
+.school-list i.wechat-icon {
+  background-position: -2px -60px;
+}
+.school-list i.python-icon {
+  background-position: -2px -2px;
+}
+.school-list i.go-icon {
+  background-position: -2px -38px;
+}
+.school-list i.ios-icon {
+  background-position: -2px -82px;
+}
+.vip-lesson .kck-icon {
+  background-position: 0 -13px;
+}
+.vip-lesson .zyljt-icon {
+  background-position: -45px 0;
+}
+.vip-lesson .zstxt-icon {
+  background-position: -30px -13px;
+}
+.vip-lesson .xlkc-icon {
+  background: url(../images/xlkc2.png) 0 0 no-repeat;
+  background-position: 0 0;
+  background-size: 12px 12px;
+}
+.vip-lesson .kcbq-icon {
+  background-position: -15px -13px;
+}
+.vip-lesson .vip-icon {
+  background-position: -16px 0;
+}
+.vip-lesson .jswd-icon {
+  background-position: 0 -27px;
+}
+.vip-lesson .wiki-icon {
+  background-position: -29px -27px;
+}
+.vip-lesson .sq-icon {
+  background-position: 0 2px;
+}
+.vip-lesson .zygx-icon {
+  background-position: -30px 0;
+}
+.icon-box {
+  width: 200px;
+  height: 60px;
+  float: right;
+  margin-right: 10px;
+  text-align: right;
+}
+.icon-box span {
+  width: 17px;
+  height: 60px;
+  margin-left: 25px;
+  cursor: pointer;
+  display: inline-block;
+  background-size: 17px;
+}
+.search-icon {
+  background: url(../images/search-icon.png) center no-repeat;
+}
+.app-icon {
+  background: url(../images/app-icon.png) center no-repeat;
+}
+.login-icon {
+  background: url(../images/login-icon.png) center no-repeat;
+}
+/*end header*/
+/*start top*/
+.top {
+  height: 330px;
+}
+.banner {
+  width: 750px;
+  height: 330px;
+  float: left;
+  margin-right: 10px;
+  overflow: hidden;
+}
+.login {
+  width: 240px;
+  height: 160px;
+  background: #fff;
+  border: 1px solid #e9e9e9;
+  padding: 26px 29px 24px;
+  float: right;
+}
+.userinfo {
+  height: 57px;
+}
+.userinfo img {
+  width: 57px;
+  height: 57px;
+  float: left;
+  margin-right: 15px;
+}
+.userinfo p {
+  width: 108px;
+  height: 16px;
+  line-height: 16px;
+  margin-top: 8px;
+  font-size: 12px;
+  color: #555;
+  float: left;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.loginon,
+.register {
+  width: 85px;
+  height: 32px;
+  line-height: 30px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  color: #35b558;
+  border: 1px solid #35b558;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  float: left;
+  margin-top: 20px;
+}
+.loginon:hover,
+.register:hover {
+  background: #35b558;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -ms-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+.loginon {
+  margin-right: 10px;
+}
+.activity {
+  width: 240px;
+  height: 160px;
+  display: block;
+  float: right;
+  margin-top: 10px;
+  overflow: hidden;
+}
+.activity img {
+  width: 240px;
+  height: 160px;
+}
+/*end top*/
+/*start线上就业班*/
+.jk-obtain {
+  height: 200px;
+  position: relative;
+}
+.jk-obtain a {
+  -webkit-transition: box-shadow 0.2s linear;
+  -moz-transition: box-shadow 0.2s linear;
+  -ms-transition: box-shadow 0.2s linear;
+  -o-transition: box-shadow 0.2s linear;
+  transition: box-shadow 0.2s linear;
+}
+.jk-obtain a:hover {
+  -webkit-box-shadow: 0px 5px 10px #aaa;
+  -moz-box-shadow: 0px 5px 10px #aaa;
+  -ms-box-shadow: 0px 5px 10px #aaa;
+  -o-box-shadow: 0px 5px 10px #aaa;
+  box-shadow: 0px 5px 10px #aaa;
+}
+section h2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #555;
+  line-height: 18px;
+  height: 18px;
+  margin-bottom: 22px;
+}
+.obtain {
+  width: 370px;
+  height: 75px;
+  line-height: 75px;
+  padding-left: 120px;
+  margin: 0 10px 10px 0;
+  float: left;
+  display: inline-block;
+}
+.obtain p {
+  font-size: 15px;
+  color: #fff;
+  line-height: 75px;
+  text-align: center;
+}
+.web {
+  background: url(../images/jiuye-web03_b78e3f6.png) no-repeat center;
+}
+.php {
+  background: url(../images/jiuye-php03_8cdf521.png) no-repeat center;
+}
+.javaweb {
+  background: url(../images/jiuye-java03_302dbd8.png) no-repeat center;
+}
+.uiux {
+  background: url(../images/jiuye-ux03_45d7813.png) no-repeat center;
+}
+.preacher {
+  width: 240px;
+  height: 160px;
+  display: inline-block;
+  position: absolute;
+  top: 40px;
+  right: 0;
+}
+.preacher img {
+  width: 240px;
+  height: 160px;
+}
+/*end线上就业班*/
+/*start专业精品课*/
+.jk-major {
+  height: 310px;
+}
+.jk-major ul li {
+  width: 235px;
+  height: 100%;
+  float: left;
+  margin-right: 20px;
+  border: 1px solid #e9e9e9;
+}
+.jk-major ul li:last-child {
+  margin-right: 0;
+}
+.jk-major ul li a {
+  display: block;
+  height: 100%;
+  -webkit-transition: box-shadow 0.2s linear;
+  -moz-transition: box-shadow 0.2s linear;
+  -ms-transition: box-shadow 0.2s linear;
+  -o-transition: box-shadow 0.2s linear;
+  transition: box-shadow 0.2s linear;
+}
+.jk-major ul li a:hover {
+  -webkit-box-shadow: 0px 3px 5px 2px #ccc;
+  -moz-box-shadow: 0px 3px 5px 2px #ccc;
+  -ms-box-shadow: 0px 3px 5px 2px #ccc;
+  -o-box-shadow: 0px 3px 5px 2px #ccc;
+  box-shadow: 0px 3px 5px 2px #ccc;
+}
+.jk-major img {
+  width: 100%;
+  height: 155px;
+  display: block;
+}
+.majorContainer {
+  position: relative;
+  height: 113px;
+  padding: 14px;
+  background: #fff;
+}
+.majorTitle {
+  width: 100%;
+  height: 36px;
+  line-height: 18px;
+  overflow: hidden;
+  font-size: 12px;
+  color: #555;
+}
+.majorInfo {
+  margin-top: 6px;
+  height: 16px;
+  line-height: 16px;
+  font-size: 12px;
+  color: #999;
+}
+.majorPrice {
+  float: left;
+  margin-top: 8px;
+  margin-right: 5px;
+  font-size: 18px;
+  color: #ff5c00;
+}
+.majorPrice::before {
+  content: '¥';
+  margin-right: 3px;
+  font-size: 14px;
+}
+.majorThrough {
+  float: left;
+  margin-top: 14px;
+  font-size: 12px;
+  color: #999;
+  text-decoration: line-through;
+}
+.majorNum {
+  position: absolute;
+  bottom: 10px;
+  right: 14px;
+  font-size: 12px;
+  color: #999;
+}
+/*end专业精品课*/
+/*start 线下培训专区*/
+.jk-offline {
+  height: 616px;
+}
+.jk-offline li {
+  position: relative;
+  width: 261px;
+  height: 139px;
+  float: right;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+}
+.jk-offline li:nth-child(3) {
+  width: 478px;
+  height: 278px;
+}
+.jk-offline li:nth-child(3) a {
+  padding-top: 40px;
+}
+.jk-offline li:nth-child(3) a .ban {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100px;
+  height: 37px;
+  line-height: 37px;
+  text-align: center;
+  -webkit-background: linear-gradient(-90deg, #000 0, rgba(216, 216, 216, 0) 100%);
+  -moz-background: linear-gradient(-90deg, #000 0, rgba(216, 216, 216, 0) 100%);
+  -ms-background: linear-gradient(-90deg, #000 0, rgba(216, 216, 216, 0) 100%);
+  -o-background: linear-gradient(-90deg, #000 0, rgba(216, 216, 216, 0) 100%);
+  background: linear-gradient(-90deg, #000 0, rgba(216, 216, 216, 0) 100%);
+}
+.jk-offline li:nth-child(3) a .top-title {
+  font-size: 37px;
+  margin-bottom: 10px;
+}
+.jk-offline li:nth-child(3) a .title {
+  font-size: 40px;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+.jk-offline li:nth-child(3) a .bot-title {
+  font-size: 26px;
+}
+.jk-offline li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 35px;
+}
+.jk-offline li a span {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+.jk-offline li a i {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0;
+  -webkit-transition: opacity 0.8s;
+  -moz-transition: opacity 0.8s;
+  -ms-transition: opacity 0.8s;
+  -o-transition: opacity 0.8s;
+  transition: opacity 0.8s;
+}
+.jk-offline li a i:hover {
+  opacity: 0.2;
+}
+.jk-offline .daniu li:nth-child(1),
+.jk-offline .daniu li:nth-child(5) {
+  background: #0276f1;
+}
+.jk-offline .daniu li:nth-child(2),
+.jk-offline .daniu li:nth-child(4) {
+  background: #3390f3;
+}
+.jk-offline .daniu li:nth-child(3) {
+  float: left;
+  background: url(../images/daniu-bg2_5bb23e1.png) no-repeat center;
+}
+.jk-offline .daniu li:nth-child(1) a span {
+  width: 31px;
+  height: 24px;
+  margin-bottom: 20px;
+  background: url(../images/daniu-05_b18767c.png) no-repeat center;
+  background-size: cover;
+}
+.jk-offline .daniu li:nth-child(2) a span {
+  width: 31px;
+  height: 28px;
+  background: url(../images/daniu-06_5b9a64a.png) no-repeat center;
+  background-size: cover;
+}
+.jk-offline .daniu li:nth-child(4) a span {
+  width: 31px;
+  height: 30px;
+  background: url(../images/daniu-07_e81e2d7.png) no-repeat center;
+  background-size: cover;
+}
+.jk-offline .daniu li:nth-child(5) a span {
+  width: 31px;
+  height: 31px;
+  background: url(../images/daniu-08_a15e689.png) no-repeat center;
+  background-size: cover;
+}
+.jk-offline .daniu li:hover {
+  background-color: #196abf;
+}
+.jk-offline .mogui {
+  margin-top: 20px;
+}
+.jk-offline .mogui li:nth-child(1),
+.jk-offline .mogui li:nth-child(5) {
+  background: #eb313e;
+}
+.jk-offline .mogui li:nth-child(2),
+.jk-offline .mogui li:nth-child(4) {
+  background: #f64450;
+}
+.jk-offline .mogui li:nth-child(3) {
+  float: left;
+  background: url(../images/mogui-bg_ee9827b.png) no-repeat center;
+  background-size: 480px 278px;
+}
+.jk-offline .mogui li:nth-child(1) a span {
+  width: 31px;
+  height: 24px;
+  margin-bottom: 20px;
+  background: url(../images/mogui-02_5e33480.png) no-repeat center;
+  background-size: cover;
+}
+.jk-offline .mogui li:nth-child(2) a span {
+  width: 31px;
+  height: 28px;
+  background: url(../images/mogui-01_08e776e.png) no-repeat center;
+  background-size: cover;
+}
+.jk-offline .mogui li:nth-child(4) a span {
+  width: 31px;
+  height: 30px;
+  background: url(../images/mogui-04_ce7d6bc.png) no-repeat center;
+  background-size: cover;
+}
+.jk-offline .mogui li:nth-child(5) a span {
+  width: 29px;
+  height: 31px;
+  background: url(../images/mogui-03_e9f2b48.png) no-repeat center;
+  background-size: cover;
+}
+.jk-offline .mogui li:hover {
+  background-color: #c32d38;
+}
+.daniu {
+  width: 100%;
+  height: 278px;
+}
+/*end 线下培训专区*/
+/*start 职业学院*/
+.jk-college {
+  height: 310px;
+}
+.jk-college ul li {
+  float: left;
+  position: relative;
+  width: 240px;
+  height: 130px;
+  margin-left: 10px;
+}
+.jk-college ul li a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.jk-college ul li img {
+  width: 240px;
+  height: 130px;
+}
+.jk-college ul li span {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  padding-top: 88px;
+}
+.jk-college li a i {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: opacity 0.8s;
+  -moz-transition: opacity 0.8s;
+  -ms-transition: opacity 0.8s;
+  -o-transition: opacity 0.8s;
+  transition: opacity 0.8s;
+}
+.jk-college li a i:hover {
+  opacity: 0.2;
+}
+.jk-college ul .web {
+  width: 500px;
+  height: 270px;
+  margin-left: 0;
+}
+.jk-college ul .web img {
+  width: 500px;
+  height: 270px;
+}
+.jk-college ul .web span {
+  padding-top: 180px;
+  font-size: 20px;
+  background: url(../images/cweb_2d70d0b.png) no-repeat center 70px;
+  background-size: 55px 82px;
+}
+.jk-college ul .python,
+.jk-college ul .go {
+  margin-bottom: 10px;
+}
+.jk-college ul .python span {
+  background: url(../images/cpython_5ed9df4.png) no-repeat center 31px;
+  background-size: 36px 36px;
+}
+.jk-college ul .go span {
+  background: url(../images/cgo_e66208d.png) no-repeat center 33px;
+  background-size: 36px 29px;
+}
+.jk-college ul .ios span {
+  background: url(../images/cios_dc0ca8e.png) no-repeat center 36px;
+  background-size: 32px 36px;
+}
+.jk-college ul .more span {
+  background: url(../images/cwechat_624099d.png) no-repeat center 40px;
+  background-size: 40px 33px;
+}
+/*end 职业学院*/
+/*start 会员课程*/
+.jk-vip {
+  height: 420px;
+  position: relative;
+}
+.jk-vip ul {
+  width: 100%;
+  height: 310px;
+}
+.jk-vip ul li {
+  width: 158px;
+  height: 150px;
+  background: #fff;
+  border: 1px solid #e9e9e9;
+  float: left;
+  margin-right: 10px;
+  -webkit-transition: box-shadow 0.5s;
+  -moz-transition: box-shadow 0.5s;
+  -ms-transition: box-shadow 0.5s;
+  -o-transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+}
+.jk-vip ul li:nth-child(6),
+.jk-vip ul li:last-child {
+  margin-right: 0;
+}
+.jk-vip ul li:nth-child(n+7) {
+  margin-top: 10px;
+}
+.jk-vip ul li:hover {
+  -webkit-box-shadow: 0px 3px 3px #ccc;
+  -moz-box-shadow: 0px 3px 3px #ccc;
+  -ms-box-shadow: 0px 3px 3px #ccc;
+  -o-box-shadow: 0px 3px 3px #ccc;
+  box-shadow: 0px 3px 3px #ccc;
+}
+.jk-vip ul li a {
+  display: block;
+  height: 100%;
+  text-align: center;
+}
+.jk-vip ul li a img {
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  margin-top: 25px;
+}
+.jk-vip ul li a p {
+  height: 22px;
+  line-height: 22px;
+  font-size: 12px;
+  color: #555;
+}
+.jk-vip ul li a span {
+  height: 22px;
+  line-height: 22px;
+  display: block;
+  font-size: 12px;
+  color: #35b558;
+}
+.jk-vip .vipAll {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -60px;
+  width: 120px;
+  height: 32px;
+  line-height: 30px;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid #35b558;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #35b558;
+}
+.jk-vip .vipAll:hover {
+  background: #35b558;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -ms-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+/*end 会员课程*/
+/*start 学员故事*/
+.jk-story {
+  height: 300px;
+}
+.jk-story .story-container {
+  width: 100%;
+  height: 260px;
+  position: relative;
+  overflow: hidden;
+}
+.jk-story .story-container .swiper-slide {
+  position: relative;
+  text-align: center;
+  float: left;
+  /*background: #f5f5f5 !important;*/
+}
+.jk-story ul {
+  width: 100%;
+  height: 200px;
+}
+.jk-story ul li {
+  float: left;
+  width: 320px;
+  height: 200px;
+  position: relative;
+  margin-right: 20px;
+  -webkit-transition: box-shadow 0.5s;
+  -moz-transition: box-shadow 0.5s;
+  -ms-transition: box-shadow 0.5s;
+  -o-transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+}
+.jk-story ul li:last-child {
+  margin-right: 0;
+}
+.jk-story ul li a {
+  display: block;
+  height: 100%;
+}
+.jk-story ul .story-content {
+  width: 100%;
+  height: 121px;
+  border: 1px solid #e9e9e9;
+  background: #fff;
+  position: relative;
+}
+.jk-story ul .story-content::before {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 12px solid #e9e9e9;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  position: absolute;
+  bottom: -12px;
+  left: 46px;
+}
+.jk-story ul .story-content::after {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 10px solid #fff;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  position: absolute;
+  bottom: -10px;
+  left: 47px;
+}
+.jk-story ul .story-content:hover {
+  -webkit-box-shadow: 0px 3px 3px #ccc;
+  -moz-box-shadow: 0px 3px 3px #ccc;
+  -ms-box-shadow: 0px 3px 3px #ccc;
+  -o-box-shadow: 0px 3px 3px #ccc;
+  box-shadow: 0px 3px 3px #ccc;
+}
+.jk-story ul .story-content p {
+  height: 100%;
+  overflow: hidden;
+  font-size: 12px;
+  color: #555;
+  line-height: 20px;
+  padding: 20px 25px;
+  text-align: left;
+}
+.jk-story ul .story-content p::before {
+  content: '';
+  display: inline-block;
+  width: 14px;
+  height: 10px;
+  background: url(../images/storyicon_4a5e270.png) no-repeat center;
+  background-size: 14px 10px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.jk-story ul .story-content p::after {
+  content: '';
+  display: inline-block;
+  width: 14px;
+  height: 10px;
+  background: url(../images/storyicon_4a5e270.png) no-repeat center;
+  background-size: 14px 10px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.jk-story ul .story-info {
+  height: 80px;
+  padding-left: 95px;
+  padding-top: 28px;
+  position: relative;
+}
+.jk-story ul .story-info img {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid #e9e9e9;
+}
+.jk-story ul .story-info p {
+  font-size: 12px;
+  color: #555;
+  height: 24px;
+  line-height: 24px;
+  overflow: hidden;
+  text-align: left;
+}
+.jk-story ul .story-info span {
+  display: block;
+  height: 24px;
+  line-height: 24px;
+  color: #999;
+  font-size: 12px;
+  text-align: left;
+}
+/*end 学员故事*/
+/*start 合作企业*/
+.jk-partner {
+  height: 240px;
+  position: relative;
+}
+.jk-partner ul {
+  width: 100%;
+  height: 120px;
+}
+.jk-partner ul li {
+  float: left;
+  width: 150px;
+  height: 50px;
+  border: 1px solid #e9e9e9;
+  background: #fff;
+  margin-right: 20px;
+  -webkit-transition: box-shadow 0.5s;
+  -moz-transition: box-shadow 0.5s;
+  -ms-transition: box-shadow 0.5s;
+  -o-transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+}
+.jk-partner ul li:nth-child(6),
+.jk-partner ul li:last-child {
+  margin-right: 0;
+}
+.jk-partner ul li:nth-child(n+7) {
+  margin-top: 20px;
+}
+.jk-partner ul li:hover {
+  -webkit-box-shadow: 0px 3px 3px #ccc;
+  -moz-box-shadow: 0px 3px 3px #ccc;
+  -ms-box-shadow: 0px 3px 3px #ccc;
+  -o-box-shadow: 0px 3px 3px #ccc;
+  box-shadow: 0px 3px 3px #ccc;
+}
+.jk-partner ul li a {
+  height: 100%;
+  display: block;
+}
+.jk-partner ul li:nth-child(1) a {
+  background: url(../images/p_microsoft_82f9a9a.png) no-repeat center;
+}
+.jk-partner ul li:nth-child(2) a {
+  background: url(../images/p_tencent_47175aa.png) no-repeat center;
+}
+.jk-partner ul li:nth-child(3) a {
+  background: url(../images/p_qcloud_ab76cc7.png) no-repeat center;
+}
+.jk-partner ul li:nth-child(4) a {
+  background: url(../images/p_qualcomm_362a472.png) no-repeat center;
+}
+.jk-partner ul li:nth-child(5) a {
+  background: url(../images/p_cocos_2a0a8f3.png) no-repeat center;
+}
+.jk-partner ul li:nth-child(6) a {
+  background: url(../images/p_amd_f9f0c7f.png) no-repeat center;
+}
+.jk-partner ul li:nth-child(7) a {
+  background: url(../images/p_xunfei_d1cd670.png) no-repeat center;
+}
+.jk-partner ul li:nth-child(8) a {
+  background: url(../images/p_tuling_3ec6ea2.png) no-repeat center;
+}
+.jk-partner ul li:nth-child(9) a {
+  background: url(../images/p_tingyun_c2752df.png) no-repeat center;
+}
+.jk-partner ul li:nth-child(10) a {
+  background: url(../images/p_juhe_25bbedf.png) no-repeat center;
+}
+.jk-partner ul li:nth-child(11) a {
+  background: url(../images/p_bootstrap_d0a74f3.png) no-repeat center;
+}
+.jk-partner ul li:nth-child(12) a {
+  background: url(../images/p_cloudstack_6ecabb3.png) no-repeat center;
+}
+.jk-partner .more-partner {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -60px;
+  width: 120px;
+  height: 32px;
+  line-height: 30px;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid #35b558;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #35b558;
+}
+.jk-partner .more-partner:hover {
+  background: #35b558;
+  color: #fff;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -ms-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+/*end 合作企业*/
+/*start footer*/
+footer {
+  min-width: 1000px;
+  border-top: 1px solid #e4e4e4;
+  background: #fff;
+}
+footer .jkinfor .jk-logo {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width: 160px;
+}
+footer .jkinfor .jk-logo img {
+  width: 109px;
+  height: 40px;
+  display: block;
+}
+footer .jkinfor .jk-logo p {
+  font-size: 12px;
+  color: #999;
+  margin-top: 20px;
+}
+footer .jkinfor dl {
+  width: 135px;
+  float: left;
+  color: #808080;
+}
+footer .jkinfor dl dt {
+  line-height: 30px;
+  font-size: 14px;
+}
+footer .jkinfor dl dd {
+  line-height: 30px;
+  font-size: 12px;
+}
+footer .jkinfor dl dd a {
+  color: #999;
+}
+footer .jkinfor dl dd a:hover {
+  color: #35b558;
+}
+footer .jk-down {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  width: 175px;
+  text-align: left;
+}
+footer .jk-down .hot-tel {
+  font-size: 14px;
+  color: #808080;
+  margin-bottom: 20px;
+}
+footer .jk-down .downCon {
+  position: relative;
+  width: 140px;
+  height: 30px;
+  border: 1px solid #eee;
+  margin-bottom: 10px;
+  line-height: 30px;
+  font-size: 13px;
+  color: #808080;
+  padding-left: 40px;
+  cursor: pointer;
+}
+footer .jk-down .down-ios {
+  background: url(../images/icon-down-ios.png) no-repeat 0 0;
+  background-size: 30px 30px;
+}
+footer .jk-down .down-and {
+  background: url(../images/icon-down-and.png) no-repeat 0 0;
+  background-size: 30px 30px;
+}
+footer .jk-down .downCon img {
+  width: 115px;
+  height: 153px;
+  position: absolute;
+  top: -157px;
+  left: 12px;
+  z-index: 2;
+  display: none;
+}
+footer .jk-down .downCon:hover img {
+  display: block;
+}
+footer .copyright {
+  font-size: 12px;
+  color: #999;
+  text-align: center;
+  padding: 15px 0;
+}
+footer .copyright strong {
+  font-weight: 400;
+}
+footer .copyright a {
+  color: #999;
+}
+footer .copyright a.down-wechat {
+  float: right;
+  width: 20px;
+  height: 15px;
+  background: url(../images/icon-down-wechat.png) no-repeat 0 0;
+  background-size: 18px 15px;
+}
+footer .copyright a.down-sina {
+  float: right;
+  width: 20px;
+  height: 15px;
+  margin-right: 10px;
+  background: url(../images/icon-down-sina.png) no-repeat 0 0;
+  background-size: 20px 15px;
+}
+footer .copyright a.down-cert {
+  display: block;
+  margin: 15px auto 0;
+}
+footer .copyright a.down-cert img {
+  width: 60px;
+}
+.jkinfor-block {
+  background: #fff;
+}
+.jkinfor {
+  position: relative;
+  height: 215px;
+  border-bottom: 1px solid #f5f5f5;
+  padding-left: 224px;
+  padding-top: 25px;
+}
+/*end footer*/
+/*start gotop*/
+.gotop {
+  position: fixed;
+  left: 50%;
+  margin-left: 510px;
+  bottom: 50px;
+  width: 34px;
+  text-align: center;
+}
+.gotop span {
+  cursor: pointer;
+}
+.gotop .backtop {
+  width: 34px;
+  height: 34px;
+  display: block;
+  background: url(../images/gotop.png) no-repeat 0 0;
+  background-size: 34px 103px;
+}
+.gotop span.jk-app {
+  position: relative;
+  display: block;
+  width: 34px;
+  height: 35px;
+  border-bottom: 1px solid #e0e0e0;
+  background: #f7f7f7 url(../images/phone-1.png) no-repeat center;
+  background-size: 12px 24px;
+}
+.gotop .appewm {
+  position: absolute;
+  top: -70px;
+  left: -126px;
+  width: 126px;
+  height: 159px;
+  background: url(../images/appewm.png) no-repeat center;
+  background-size: 100%;
+  display: none;
+}
+.gotop span.jk-app:hover .appewm {
+  display: block;
+}
+.gotop .diaocha {
+  width: 34px;
+  height: 34px;
+  display: block;
+}
+/*end gotop*/

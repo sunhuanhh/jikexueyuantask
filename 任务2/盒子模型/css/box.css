@@ -1,0 +1,184 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*start标准盒子模型*/
+.box-wrapper1{
+	width: 100px;
+	height: 100px;
+	padding: 10px;
+	border: 5px solid #f00;
+	background-color: #0f0;
+	margin: 50px;
+}
+
+.box1{
+	width: 100px;
+	height: 100px;
+	background-color: #f60;
+}
+/*end标准盒子模型*/
+
+/*start怪异盒子模型*/
+.box-wrapper2{
+	width: 130px;
+	height: 130px;
+	padding: 10px;
+	border: 5px solid #f00;
+	background-color: #0f0;
+	margin: 50px;
+	box-sizing: border-box;
+}
+
+.box2{
+	width: 100px;
+	height: 100px;
+	background-color: #f60;
+}
+/*end怪异盒子模型*/
+
+/*start 弹性盒子模型水平分栏,排序*/
+.con{
+	width: 600px;
+	margin: 50px;
+	background-color: #000;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+.first{
+	height: 100px;
+	background-color: #f00;
+	-webkit-flex:1;
+	-moz-flex:1;
+	-ms-flex:1;
+	-o-flex:1;
+	flex:1;
+	-webkit-order:3;
+	-moz-order:3;
+	-ms-order:3;
+	-o-order:3;
+	order:3;
+}
+.second{
+	height: 100px;
+	background-color: #00f;
+	-webkit-flex:1;
+	-moz-flex:1;
+	-ms-flex:1;
+	-o-flex:1;
+	flex:1;
+	-webkit-order:1;
+	-moz-order:1;
+	-ms-order:1;
+	-o-order:1;
+	order:1;
+}
+.third{
+	height: 200px;
+	background-color: #0f0;
+	-webkit-flex:1;
+	-moz-flex:1;
+	-ms-flex:1;
+	-o-flex:1;
+	flex:1;
+	-webkit-order:2;
+	-moz-order:2;
+	-ms-order:2;
+	-o-order:2;
+	order:2;
+}
+/*end 弹性盒子模型水平分栏,排序*/
+
+/*start 弹性盒子模型垂直分栏*/
+.con1{
+	width: 600px;
+	height: 600px;
+	margin: 50px;
+	background-color: #000;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction:column;
+	-moz-flex-direction:column;
+	-ms-flex-direction:column;
+	-o-flex-direction:column;
+	flex-direction:column;
+}
+.first1{
+	height: 100px;
+	background-color: #f00;
+	-webkit-flex:1;
+	-moz-flex:1;
+	-ms-flex:1;
+	-o-flex:1;
+	flex:1;
+}
+.second1{
+	height: 100px;
+	background-color: #00f;
+	-webkit-flex:1;
+	-moz-flex:1;
+	-ms-flex:1;
+	-o-flex:1;
+	flex:1;
+}
+.third1{
+	height: 200px;
+	background-color: #0f0;
+	-webkit-flex:1;
+	-moz-flex:1;
+	-ms-flex:1;
+	-o-flex:1;
+	flex:1;
+}
+/*end 弹性盒子模型垂直分栏*/
+
+/*start column分栏*/
+.column1{
+	margin: 0 50px;
+	border: 2px solid #000;
+	-webkit-column-count:4;
+	-moz-column-count:4;
+	-o-column-count:4;
+	-ms-column-count:4;
+	column-count:4;
+	-moz-column-rule-style:dashed;
+	-webkit-column-rule-style:dashed;
+	-o-column-rule-style:dashed;
+	-ms-column-rule-style:dashed;
+	column-rule-style:dashed;
+}
+.img{
+	width: 100%;
+}
+/*end column分栏*/
+
+/*start旧版弹性盒子居中*/
+.col{
+	width: 800px;
+	height: 500px;
+	background-color: #f60;
+	margin: 50px;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-box;
+	display: -o-box;
+	display: box;
+	-webkit-box-pack:center;
+	-moz-box-pack:center;
+	-ms-box-pack:center;
+	-o-box-pack:center;
+	box-pack:center;
+	-webkit-box-align:center;
+	-moz-box-align:center;
+	-ms-box-align:center;
+	-o-box-align:center;
+	box-align:center;
+}
+/*end旧版弹性盒子居中*/

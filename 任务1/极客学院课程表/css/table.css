@@ -1,0 +1,31 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font: 14px/35px arial;
+	text-align: center;
+	background-color: #d0d0c2;
+}
+
+header{
+	margin-top: 50px;
+}
+
+table{
+	margin: 0 auto;
+	border-color: #777769;
+}
+
+table tr th{
+	width: 60px; 
+	height: 35px;
+	border-color: #ccc;
+}
+
+table tr td{
+	width: 60px; 
+	height: 35px;
+	border-color: #ccc;
+}

@@ -1,0 +1,14 @@
+.con {
+    margin: 30px;
+}
+
+.title {
+    color: #256BB8;
+    font-weight: bold;
+    background: #f5f5f5;
+}
+p{
+    color: #666;
+    font-size: 14px;
+    line-height: 20px;
+}

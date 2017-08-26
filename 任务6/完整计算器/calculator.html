@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>完整计算器</title>
+    <link rel="stylesheet" href="css/calculator.css">
+</head>
+
+<body>
+    <div id="calculator">
+        <!--screen输入栏-->
+        <input type="text" id="screenName" name="screenName" class="screen" onkeypress="javascript:return false"/>
+
+        <div id="keys">
+            <!--第五排-->
+            <input type="button" id="sin" onclick="sin()" value="sin" class="buttons first">
+            <input type="button" id="cos" onclick="cos()" value="cos" class="buttons last">
+            <!--第一排-->
+            <input type="button" id="7" onclick="count(this.id)" value="7" class="buttons">
+            <input type="button" id="8" onclick="count(this.id)" value="8" class="buttons">
+            <input type="button" id="9" onclick="count(this.id)" value="9" class="buttons">
+            <input type="button" id="Back" onclick="backNum()" value="Back" class="buttons">
+            <input type="button" id="C" onclick="clearNum()" value="C" class="buttons last">
+            <!--第二排-->
+            <input type="button" id="4" onclick="count(this.id)" value="4" class="buttons">
+            <input type="button" id="5" onclick="count(this.id)" value="5" class="buttons">
+            <input type="button" id="6" onclick="count(this.id)" value="6" class="buttons">
+            <input type="button" id="*" onclick="count(this.id)" value="*" class="buttons">
+            <input type="button" id="/" onclick="count(this.id)" value="/" class="buttons last">
+            <!--第三排-->
+            <input type="button" id="1" onclick="count(this.id)" value="1" class="buttons">
+            <input type="button" id="2" onclick="count(this.id)" value="2" class="buttons">
+            <input type="button" id="3" onclick="count(this.id)" value="3" class="buttons">
+            <input type="button" id="+" onclick="count(this.id)" value="+" class="buttons">
+            <input type="button" id="-" onclick="count(this.id)" value="-" class="buttons last">
+            <!--第四排-->
+            <input type="button" id="0" onclick="count(this.id)" value="0" class="buttons">
+            <input type="button" id="00" onclick="count(this.id)" value="00" class="buttons">
+            <input type="button" id="." onclick="count(this.id)" value="." class="buttons">
+            <input type="button" id="%" onclick="count(this.id)" value="%" class="buttons">
+            <input type="button" id="eva" onclick="eva()" value="=" class="buttons last">
+            
+        </div>
+    </div>
+    <script type="text/javascript" src="js/calculator.js"></script>
+</body>
+
+</html>

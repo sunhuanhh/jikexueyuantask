@@ -1,0 +1,307 @@
+*{
+	margin: 0;
+	padding:0;
+}
+
+html,body{
+	height: 100%;
+	font: 12px arial;
+}
+
+.wrapper{
+	min-width: 810px;
+	min-height: 500px;
+	position: relative;
+	height: 100%;
+}
+/*start头部*/
+header{
+	width: 100%;
+	height: 48px;
+}
+
+header nav{
+	position: relative;
+	float: right;
+	margin: 19px 12px 5px 0;
+}
+
+header nav a{
+	margin: 0 5px;
+	padding: 5px;
+	color: #333;
+	font-weight: 700;
+}
+
+.login{
+	font-weight: 500;
+}
+
+.more{
+	text-decoration: none;
+	text-align: center;
+	background-color: #38f;
+	color: #fff;
+}
+
+.install{
+	position: absolute;
+    right: 68px;
+    top: 45px;
+	width: 70px;
+	height: 104px;
+	border: 1px solid #d1d1d1;
+    text-align: center;
+    -webkit-box-shadow: 1px 1px 5px #d1d1d1;
+    -moz-box-shadow: 1px 1px 5px #d1d1d1;
+    -ms-box-shadow: 1px 1px 5px #d1d1d1;
+    -o-box-shadow: 1px 1px 5px #d1d1d1;
+    box-shadow: 1px 1px 5px #d1d1d1;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    -ms-opacity: 0;
+    -o-opacity: 0;
+    opacity: 0;
+    filter:Alpha(opacity=0);
+}
+
+.install:hover{
+	-webkit-opacity: 1;
+    -moz-opacity: 1;
+    -ms-opacity: 1;
+    -o-opacity: 1;
+	opacity: 1;
+	filter:Alpha(opacity=100);
+}
+
+.install a{
+	display: block;
+	text-decoration: none;
+	line-height: 26px;
+	color: #333;
+}
+
+.install a:hover{
+	background-color: #38f;
+	color: #fff;
+}
+
+aside{
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 99;
+	width: 85px;
+	height: 100%;
+	background-color: #f9f9f9;
+	border-left: 1px solid #e7e7e7;
+	-webkit-opacity: 0;
+    -moz-opacity: 0;
+    -ms-opacity: 0;
+    -o-opacity: 0;
+    opacity: 0;
+    filter:Alpha(opacity=0);
+}
+
+aside:hover{
+	-webkit-opacity: 1;
+    -moz-opacity: 1;
+    -ms-opacity: 1;
+    -o-opacity: 1;
+	opacity: 1;
+	filter:Alpha(opacity=100);
+}
+
+.aside-title{
+	width: 66px;
+	height: 43px;
+	line-height: 43px;
+	border-bottom: 1px solid #f0f0f0;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 9px;	
+	cursor: default;
+}
+
+.aside-cont a,.aside-bot a{
+	width: 66px;
+	height: 76px;
+	display: block;
+	border-bottom: 1px solid #f0f0f0;
+	text-align: center;
+	margin: 0 auto;
+	color: #666;
+	text-decoration: none;
+	overflow: hidden;
+}
+
+.aside-cont a:hover{
+	text-decoration: underline;
+}
+
+.aside-cont span{
+	width: 36px;
+	height: 36px;
+	display: block;
+	margin: 10px auto 5px;
+	background: url(../img/bdbri_icons_0a62ce1.png) no-repeat;
+}
+
+.aside-cont span.asideimg1{
+	width: 40px;
+	background-position: -72px 0;
+}
+
+.aside-cont span.asideimg2{
+	background-position: -112px 0;
+}
+
+.aside-cont span.asideimg3{
+	background-position: -36px 0;
+}
+
+.aside-cont span.asideimg4{
+	background-position: -148px 0;
+}
+
+.aside-cont span.asideimg5{
+	background-position: -184px 0;
+}
+
+.aside-bot{
+	margin-top: 15px;
+	width: 85px;
+	height: 77px;
+	overflow: hidden;
+}
+
+.aside-bot a{
+	border-bottom: 0;
+	text-decoration: underline;
+}
+/*end头部*/
+/*start搜索框*/
+.content{
+	width: 641px;
+	height: 190px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.content img{
+	width: 270px;
+	height: 129px;
+}
+
+.fm{
+	margin: 22px auto 0;
+	width: 641px;
+	position: relative;
+	overflow: hidden;
+}
+
+.content input{
+	width: 504px;
+	height: 34px;
+	padding-right: 30px;
+	border: 1px solid #b6b6b6;
+	border-right: 0;
+	float: left;
+    padding-left: 5px;
+}
+
+.camera{
+	width: 18px;
+	height: 16px;
+	background: url(../img/camera_new_5606e8f.png) no-repeat;
+	position: absolute;
+	right: 112px;
+	top: 10px;
+	cursor: pointer;
+}
+
+.camera:hover{
+	background-position: 0 -20px;
+}
+
+.content button{
+	width: 100px;
+	height: 36px;
+	background-color: #3385ff;
+	color: #fff;
+	font-size: 14px;
+	border: 0;
+	letter-spacing: 1px;
+	cursor: pointer;
+	float: left;
+}
+/*end搜索框*/
+/*start二维码*/
+ .bdcond{
+	position: absolute;
+	bottom: 100px;
+	width: 100%;
+	height: 90px;
+	text-align: center;
+}
+
+.cond{
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+	background: url(../img/zbios_efde696.png) no-repeat center;
+}
+
+.bdcond p{
+	color: #666;
+} 
+/*end二维码*/
+/*start底部*/
+ footer{
+	position: absolute;
+	bottom: 47px;
+	width: 100%;
+	height: 46px;
+	color: #999;
+}
+
+footer a{
+	color: #999;
+}
+
+footer p{
+	line-height: 22px;
+	text-align: center;
+} 
+
+.foottop a{
+	margin-left: 25px;
+}
+
+.foottop a.foottopa{
+	margin-left: 0;
+}
+
+.footbot{
+	margin-left: 19px;
+}
+
+footer p i{
+	width: 14px;
+	height: 17px;
+	display: inline-block;
+	background: url(../img/icons_5859e57.png) no-repeat;
+}
+
+.footicon1{
+	background-position: -600px -96px;
+	position: relative;
+    top: 3px;
+}
+
+.footicon2{
+	background-position: -623px -96px;
+	position: relative;
+    top: 3px;
+}
+/*end底部*/

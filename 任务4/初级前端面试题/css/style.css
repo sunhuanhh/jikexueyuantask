@@ -1,0 +1,15 @@
+html,body{
+	font: 14px arial;
+}
+.wrapper{
+	width: 800px;
+	height: 100%;
+	margin: 0 auto 20px;
+	min-height: 500px;
+}
+h1{
+	text-align: center;
+}
+h3{
+	margin: 0;
+}

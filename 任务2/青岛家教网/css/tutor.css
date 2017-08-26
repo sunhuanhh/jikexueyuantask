@@ -1,0 +1,120 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: url(../images/beijing.gif);
+	font: 12px arial;
+	color: #333;
+}
+a{
+	text-decoration: none;
+}
+.star{
+	color: #f00;
+}
+.link{
+	color: #00c;
+	text-decoration: underline;
+}
+.wrapper{
+	width: 640px;
+	height: auto;
+	padding: 0 35px;
+	background-color: #fff;
+	margin: 10px auto 20px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-ms-border-radius: 30px;
+	-o-border-radius: 30px;
+	border-radius: 30px;
+}
+/*start头部*/
+header{
+	width: 640px;
+	height: 82px;
+}
+.logo{
+	width: 180px;
+	height: 76px;
+	margin: 3px 0;
+	float: left;
+}
+nav{
+	padding-top: 63px;
+	float: right;
+}
+nav a{
+	color: #ff0099;
+	margin-left: 10px;
+}
+/*end头部*/
+.top{
+	font-size: 18px;
+	width: 640px;
+	height: 55px;
+	line-height: 55px;
+	text-align: center;
+}
+/*start表格*/
+table{
+	border-collapse: collapse;
+}
+table tr th,table tr td{
+	border: 1px solid #ccc;
+	padding: 2px;
+}
+table thead tr{
+	background-image: url(../images/beijin1.gif);
+	text-align: center;
+	line-height: 20px;
+}
+table tfoot tr{
+	text-align: center;
+	height: 80px;
+}
+.submit{
+	width: 90px;
+	height: 25px;
+}
+table tbody tr th{
+	text-align: left;
+	line-height: 20px;
+	padding-left: 15px;
+	color: #039;
+	background-color: #eee;
+}
+.title{
+	width: 140px;
+	text-align: right;
+}
+.blue{
+	line-height: 20px;
+	color: #00f;
+}
+input[type="text"],input[type="tel"],input[type="email"],input[type="number"]{
+	width: 240px;
+	margin-right: 8px;
+}
+select{
+	margin-right: 8px;
+}
+.coach tr td{
+	border: 0;
+}
+.coach tr td strong{
+	line-height: 20px;
+}
+input[type="checkbox"]{
+	margin: 3px;
+}
+/*end表格*/
+/*start尾部*/
+footer{
+	height: 45px;
+	text-align: center;
+}
+footer span{
+	color: #666;
+}
+/*end尾部*/

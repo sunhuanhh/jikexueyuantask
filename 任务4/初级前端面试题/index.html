@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>初级前端面试题</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>初级前端面试题</h1>
+        <h2>HTML+CSS</h2>
+        <div>
+            <h3>1.对WEB标准以及W3C的理解与认识</h3>
+            <p>标签闭合、标签小写、不乱嵌套、提高搜索机器人搜索几率、使用外 链css和js脚本、结构行为表现的分离、文件下载与页面速度更快、内容能被更多的用户所访问、内容能被更广泛的设备所访问、更少的代码和组件，容易维 护、改版方便，不需要变动页面内容、提供打印版本而不需要复制内容、提高网站易用性。</p>
+        </div>
+        <div>
+            <h3>2.xhtml和html有什么区别</h3>
+            <p>HTML是一种基本的WEB网页设计语言，XHTML是一个基于XML的置标语言最主要的不同：
+                <br> XHTML 元素必须被正确地嵌套。
+                <br> XHTML 元素必须被关闭。
+                <br> 标签名必须用小写字母。
+                <br> XHTML 文档必须拥有根元素。</p>
+        </div>
+        <div>
+            <h3>3.Doctype作用? 严格模式与混杂模式如何区分？它们有何意义?</h3>
+            <p>
+                <code>&lt;!DOCTYPE&gt;</code> 声明位于文档中的最前面， 处于
+                <code>&lt;html&gt;</code> 标签之前。 告知浏览器的解析器， 用什么文档类型来规范解析这个文档。
+                <br>严格模式的排版和 JS 运作模式是 以该浏览器支持的最高标准运行。
+                <br>在混杂模式中，页面以宽松的向后兼容的方式显示。模拟老式浏览器的行为以防止站点无法工作。
+                <br> DOCTYPE 不存在或格式不正确会导致文档以混杂模式呈现。
+            </p>
+        </div>
+        <div>
+            <h3>4.行内元素有哪些？块级元素有哪些？ 空(void)元素有那些？</h3>
+            <p>
+                行内元素：a、b、span、img、input、strong、select、label、em、button、textarea
+                <br>块级元素：div、ul、li、dl、dt、dd、p、h1-h6、blockquote
+                <br>空元素：即系没有内容的HTML元素，例如：br、meta、hr、link、input、img
+            </p>
+        </div>
+        <div>
+            <h3>5.盒子模型</h3>
+            <p>
+                盒子模型包括四部分：内容（content）、填充（padding）、边框（border）、边界（margin）
+                <br>盒子模型可以分为两种：IE盒子模型和W3C标准盒子模型
+                <br>区别：两者对于width的计算方式不同，前者width=border+padding+内容宽度，后者width=内容宽度。
+            </p>
+        </div>
+        <div>
+            <h3>6.CSS引入的方式有哪些? link和@import的区别是?</h3>
+            <p>
+                内联 内嵌 外链 导入
+                <br> 区别 ：同时加载
+                <br> link 属于 XHTML 标签，而 @import 是 CSS 提供的 ;
+                <br>页面被加载的时， link 会同时被加载，而 @import 引用的 CSS 会等到页面被加载完再加载 ;
+                <br> import 只在 IE5 以上才能识别，而 link 是 XHTML 标签，无兼容问题 ;
+                <br> link 方式的样式的权重 高于 @import 的权重 .
+            </p>
+        </div>
+        <div>
+            <h3>7.CSS选择符有哪些?哪些属性可以继承?优先级算法如何计算?内联和important哪个优先级高?</h3>
+            <p>
+                标签选择符 类选择符 id选择符
+                <br>继承不如指定 Id>class>标签选择
+                <br>后者优先级高
+            </p>
+        </div>
+        <div>
+            <h3>8.前端页面有哪三层构成，分别是什么?作用是什么?</h3>
+            <p>结构层 Html 表示层 CSS 行为层 js</p>
+        </div>
+        <div>
+            <h3>9.简述一下src与href的区别</h3>
+            <p>href 是指向网络资源所在位置，建立和当前元素（锚点）或当前文档（链接）之间的链接，用于超链接。 src是指向外部资源的位置，指向的内容将会嵌入到文档中当前标签所在位置；在请求src资源时会将其指向的资源下载并应用到文档内，例如js脚本，img图片和frame等元素。当浏览器解析到该元素时，会暂停其他资源的下载和处理，直到将该资源加载、编译、执行完毕，图片和框架等元素也如此，类似于将所指向资源嵌入当前标签内。这也是为什么将js脚本放在底部而不是头部。
+            </p>
+        </div>
+        <div>
+            <h3>10.position包含几种属性？absolute和relative的区别？</h3>
+            <p>static：默认状态、没有定位、正常流
+                <br> inherit：从父元素集成position属性的值
+                <br> fixed：生成绝对定位的元素（相对于浏览器窗口进行定位）
+                <br> absolute：生成绝对定位的元素（相位与static定位以外的第一个父元素定位）
+                <br> relative：生成相对定位的元素（相对于其正常位置定位）
+                <br> absolute和relative区别：父元素的padding对relative的子元素布局有影响，absolute的子元素不受影响
+            </p>
+        </div>
+        <div>
+            <h3>11.px和em的区别</h3>
+            <p>px和em都是长度单位，区别是，px的值是固定的，指定是多少就是多少，计算比较容易。em得值不是固定的，并且em会继承父级元素的字体大小。
+                <br> 浏览器的默认字体高都是16px。所以未经调整的浏览器都符合: 1em=16px。那么12px=0.75em, 10px=0.625em
+            </p>
+        </div>
+        <div>
+            <h3>12.浏览器的内核分别是什么?</h3>
+            <p>IE: trident内核
+                <br> Firefox：gecko内核
+                <br> Safari：webkit内核
+                <br> Opera：以前是presto内核，Opera现已改用Google Chrome的Blink内核
+                <br> Chrome：Blink(基于webkit，Google与Opera Software共同开发)
+            </p>
+        </div>
+        <div>
+            <h3>13.浏览器兼容问题</h3>
+            <p>css兼容性问题：①不同浏览器的标签默认的外补丁和内补丁不同，解决方案：用通配符*来设置各个标签的内外补丁是0（即设置margin和padding为0）；②div的垂直居中问题 vertical-align：middle；文字居中：将行距增加到和整个div一样，高line-height=行高；③margin加倍问题：设置为float的div在ie下的margin会加倍。解决方案：为这个div设置样式：display:inline.</p>
+        </div>
+        <div>
+            <h3>14.前端性能优化</h3>
+            <p>减少HTTP请求、使用内容发布网络、压缩组件、使用Expire头、JS放底部、CSS放顶部、避免CSS表达式等。
+            </p>
+        </div>
+        <div>
+            <h3>15.描述css reset的作用和用途。</h3>
+            <p>Reset重置浏览器的css默认属性 浏览器的品种不同，样式不同，然后重置，让他们统一</p>
+        </div>
+        <div>
+            <h3>16.解释css sprites，如何使用。</h3>
+            <p>Css 精灵 把一堆小的图片整合到一张大的图片上，减轻服务器对图片的请求数量</p>
+        </div>
+        <div>
+            <h3>17.什么是语义化的HTML?</h3>
+            <p>直观的认识标签 对于搜索引擎的抓取有好处</p>
+        </div>
+        <div>
+            <h3>18.清除浮动的几种方式，各自的优缺点</h3>
+            <p>1.使用空标签清除浮动 clear:both（理论上能清楚任何标签，，，增加无意义的标签）
+                <br> 2.使用overflow:auto（空标签元素清除浮动而不得不增加无意代码的弊端,,使用zoom:1用于兼容IE）
+                <br> 3.是用afert伪元素清除浮动(用于非IE浏览器)
+            </p>
+        </div>
+        <div>
+            <h3>19.写出几种IE6 BUG的解决方法</h3>
+            <p>1.双边距BUG float引起的 使用display
+                <br> 2.3像素问题 使用float引起的 使用dislpay:inline -3px
+                <br> 3.超链接hover 点击后失效 使用正确的书写顺序 link visited hover active
+                <br> 4.Ie z-index问题 给父级添加position:relative
+                <br> 5.Png 透明 使用js代码 改
+                <br> 6.Min-height 最小高度 ！Important 解决
+                <br> 7.select 在ie6下遮盖 使用iframe嵌套
+                <br> 8.为什么没有办法定义1px左右的宽度容器（IE6默认的行高造成的，使用over:hidden,zoom:0.08 line-height:1px）
+                <br>
+            </p>
+        </div>
+        <div>
+            <h3>20.什么叫优雅降级和渐进增强？</h3>
+            <p>渐进增强 progressive enhancement：
+                <br> 针对低版本浏览器进行构建页面，保证最基本的功能，然后再针对高级浏览器进行效果、交互等改进和追加功能达到更好的用户体验。
+                <br> 优雅降级 graceful degradation：
+                <br> 一开始就构建完整的功能，然后再针对低版本浏览器进行兼容。
+                <br> 区别：
+                <br> a. 优雅降级是从复杂的现状开始，并试图减少用户体验的供给
+                <br> b. 渐进增强则是从一个非常基础的，能够起作用的版本开始，并不断扩充，以适应未来环境的需要
+                <br> c. 降级（功能衰减）意味着往回看；而渐进增强则意味着朝前看，同时保证其根基处于安全地带
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

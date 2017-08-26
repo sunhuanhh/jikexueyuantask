@@ -1,0 +1,21 @@
+{
+  "name": "busstop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^7.0.0"
+  },
+  "dependencies": {
+    "autoprefixer-core": "^6.0.1",
+    "css-mqpacker": "^6.0.1",
+    "csswring": "^6.0.0",
+    "gulp-less": "^3.3.2"
+  }
+}

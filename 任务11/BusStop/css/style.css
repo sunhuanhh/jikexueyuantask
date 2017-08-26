@@ -1,0 +1,124 @@
+html,
+body,
+div,
+p,
+span,
+ul,
+li,
+a,
+img,
+header,
+footer,
+nav,
+section,
+i,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd,
+strong {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+ul,
+li {
+  list-style: none;
+}
+.wrapper {
+  width: 500px;
+  height: auto;
+  margin: 0 auto;
+}
+article {
+  border: 10px solid #ccc;
+  padding: 10px 0;
+}
+.top {
+  height: 100px;
+  overflow: hidden;
+}
+.top-l {
+  width: 150px;
+  height: 70px;
+  float: left;
+}
+.top-l h1 {
+  font-size: 60px;
+  color: #fff;
+  background: #f00;
+  text-align: center;
+}
+.top-l p {
+  font-size: 12px;
+  color: #333;
+}
+.top-r {
+  width: 250px;
+  height: 55px;
+  margin-right: 30px;
+  float: right;
+}
+.top-r h2 {
+  line-height: 1;
+  width: 100px;
+  float: left;
+  text-align: center;
+}
+.top-r h2 p {
+  font-size: 30px;
+  color: #028102;
+}
+.top-r h2 span {
+  font-size: 12px;
+  color: #028102;
+}
+.top-r hr {
+  width: 20px;
+  height: 0;
+  border: 1px solid #028102;
+  display: inline-block;
+  float: left;
+  margin: 15px 10px;
+}
+.middle {
+  width: 480px;
+  background: #028102;
+  color: #fff;
+  overflow: hidden;
+}
+.middle ul li {
+  width: 20px;
+  height: 150px;
+  flex: 1;
+  display: flex;
+  margin: 0px 4px;
+  float: left;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.bottom {
+  border-bottom: 5px solid #f00;
+  width: 400px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+}
+.bottom .triangle {
+  position: absolute;
+  right: -5px;
+  top: 15px;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-left: 10px solid #f00;
+  border-bottom: 10px solid #f00;
+}

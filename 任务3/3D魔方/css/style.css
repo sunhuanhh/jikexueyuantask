@@ -1,0 +1,93 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.wrapper{
+	width: 120px;
+	height: 120px;
+	margin: 80px auto 0;
+}
+.wrap{
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transform-origin: 60px 60px 0;
+	transform-origin: 60px 60px 0;
+	-webkit-animation:animation 5s ease-in-out infinite;
+	animation:animation 5s ease-in-out infinite;
+}
+.box{
+	width: 120px;
+	height: 120px;
+	position: absolute;
+}
+/*start 9个div*/
+.box div{
+	width: 40px;
+	height: 40px;
+	float: left;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+}
+.one div{
+	background: #f00;
+}
+.two div{
+	background: #0f0;
+}
+.three div{
+	background: #00f;
+}
+.four div{
+	background: #f60;
+}
+.five div{
+	background: #6f0;
+}
+.six div{
+	background: #60f;
+}
+/*end 9个div*/
+/*start 6个面*/
+.one{
+	-webkit-transform: translateZ(60px);
+	transform: translateZ(60px);
+}
+.two{
+	-webkit-transform: rotateX(-90deg) translateZ(60px);
+	transform: rotateX(-90deg) translateZ(60px);
+}
+.three{
+	-webkit-transform: rotateX(180deg) translateZ(60px);
+	transform: rotateX(180deg) translateZ(60px);
+}
+.four{
+	-webkit-transform: rotateX(90deg) translateZ(60px);
+	transform: rotateX(90deg) translateZ(60px);
+}
+.five{
+	-webkit-transform: rotateY(90deg) translateZ(60px);
+	transform: rotateY(90deg) translateZ(60px);
+}
+.six{
+	-webkit-transform: rotateY(-90deg) translateZ(60px);
+	transform: rotateY(-90deg) translateZ(60px);
+}
+/*end 6个面*/
+/*start旋转动画*/
+@-webkit-keyframes animation{
+	from,to{}
+	16%{-webkit-transform: rotateY(-90deg);}
+	33%{-webkit-transform: rotateY(-90deg)rotateZ(135deg);}
+	50%{-webkit-transform: rotateY(225deg)rotateZ(135deg);}
+	66%{-webkit-transform: rotateY(135deg)rotateX(135deg);}
+	83%{-webkit-transform: rotateX(135deg);}
+}
+@keyframes animation{
+	from,to{}
+	16%{transform: rotateY(-90deg);}
+	33%{transform: rotateY(-90deg)rotateZ(135deg);}
+	50%{transform: rotateY(225deg)rotateZ(135deg);}
+	66%{transform: rotateY(135deg)rotateX(135deg);}
+	83%{transform: rotateX(135deg);}
+}
+/*end旋转动画*/

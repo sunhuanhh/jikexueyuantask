@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>网页换肤</title>
+	<link rel="stylesheet" href="css/skinlv.css" id="cssfile">
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="container">
+				<a href="#"><img src="images/richanglogo168_24.png" alt="hao123"></a>
+			</div>
+		</header>
+		<div class="container">
+			<!-- start 搜索框 -->
+			<div class="top">
+				<a href="#">
+					<span class="baidulogo"></span>
+				</a>
+				<input type="text" class="search">
+				<button class="baidubtn">百度一下</button>
+				<button class="colorbtn" onclick="changeSkin('skinhong')">红色</button>
+				<button class="colorbtn" onclick="changeSkin('skincheng')">橙色</button>
+				<button class="colorbtn" onclick="changeSkin('skinhuang')">黄色</button>
+				<button class="colorbtn" onclick="changeSkin('skinlv')">绿色</button>
+				<button class="colorbtn" onclick="changeSkin('skinlan')">蓝色</button>
+			</div>
+			<!-- end 搜索框 -->
+			<!-- start 导航 -->
+			<nav id="nav">
+				<ul>
+					<li class="on"><a href="#">首页</a></li>
+					<li><a href="#">电视剧</a></li>
+					<li><a href="#">最新电影</a></li>
+					<li><a href="#">新闻头条</a></li>
+					<li><a href="#">军事热点</a></li>
+					<li><a href="#">八卦娱乐</a></li>
+					<li><a href="#">热门游戏</a></li>
+					<li><a href="#">小游戏</a></li>
+					<li><a href="#">今日特价</a></li>
+					<li><a href="#">特价旅游</a></li>
+					<li><a href="#">最新小说</a></li>
+				</ul>
+			</nav>
+			<!-- end 导航 -->
+			<!-- start 左边 -->
+			<div class="left">
+				<div class="leftlist i-tv"><a href="#">电视剧</a><span class="line">|</span><a href="#">综艺</a></div>
+				<div class="leftlist i-game"><a href="#">游戏</a><span class="line">|</span><a href="#">小游戏</a></div>
+				<div class="leftlist i-move"><a href="#">电影</a><span class="line">|</span><a href="#">直播</a></div>
+				<div class="leftlist i-comic"><a href="#">动画</a><span class="line">|</span><a href="#">漫画</a></div>
+				<div class="leftlist i-toutiao"><a href="#">新闻</a><span class="line">|</span><a href="#">军事</a></div>
+				<div class="leftlist i-travel"><a href="#">旅游</a><span class="line">|</span><a href="#">音乐</a></div>
+				<div class="leftlist i-caipiao"><a href="#">彩票</a><span class="line">|</span><a href="#">竞彩</a></div>
+				<div class="leftlist i-gaoxiao"><a href="#">搞笑</a><span class="line">|</span><a href="#">小说</a></div>
+				<div class="leftlist i-tuan"><a href="#">特价</a><span class="line">|</span><a href="#">手机</a></div>
+				<div class="leftlist i-gupiao"><a href="#">股票</a><span class="line">|</span><a href="#">理财</a></div>
+			</div>
+			<!-- end 左边 -->
+			<!-- start 右边 -->
+			<div class="right">
+				<div class="rightlist">
+					<ul>
+						<li class="site-item"><a href="#" class="sitemainlink baidu">百度</a>•<a href="#" class="siteright">贴吧</a></li>
+						<li class="site-item"><a href="#" class="sitemainlink xinlang">新浪</a>•<a href="#" class="siteright">微博</a></li>
+						<li class="site-item"><a href="#" class="sitemainlink souhu">搜狐</a>•<a href="#" class="siteright">热点</a></li>
+						<li class="site-item"><a href="#" class="sitemainlink tengxun">腾讯</a></li>
+						<li class="site-item"><a href="#" class="sitemainlink wangyi">网易</a></li>
+						<li class="site-item"><a href="#" class="sitemainlink youku">优酷网</a></li>
+						<li class="site-item"><a href="#" class="sitemainlink caipiao">彩票</a>•<a href="#" class="siteright">双色球</a></li>
+						<li class="site-item"><a href="#" class="sitemainlink fenghuang">凤凰网</a></li>
+						<li class="site-item"><a href="#" class="sitemainlink taobao">淘宝网</a></li>
+						<li class="site-item"><a href="#" class="sitemainlink mianfei">免费游戏</a></li>
+						<li class="site-item"><a href="#" class="sitemainlink youxi">4399游戏</a></li>
+						<li class="site-item"><a href="#" class="sitemainlink yingshi">hao123影视</a></li>
+						<li class="site-item"><a href="#" class="sitemainlink jingdong">京东商城</a></li>
+						<li class="site-item"><a href="#" class="sitemainlink suning">苏宁易购</a></li>
+						<li class="site-item"><a href="#" class="sitemainlink jinri">今日特价</a></li>
+						<li class="site-item"><a href="#" class="sitemainlink tiyu">体育</a>•<a href="#" class="siteright">NBA</a></li>
+						<li class="site-item"><a href="#" class="sitemainlink qiche">汽车之家</a></li>
+						<li class="site-item"><a href="#" class="sitemainlink douyu">斗鱼TV</a></li>
+					</ul>
+				</div>
+				<div class="rightline"></div>
+				<div class="rightlist">
+					<ul>
+						<li class="site-item"><a href="#" class="sitemain">东方财富</a>•<a href="#" class="siteright">理财</a></li>
+						<li class="site-item"><a href="#" class="sitemain">58同城</a></li>
+						<li class="site-item"><a href="#" class="sitemain">搜房网</a></li>
+						<li class="site-item"><a href="#" class="sitemain">携程旅行网</a></li>
+						<li class="site-item"><a href="#" class="sitemain">PPTV聚力</a></li>
+						<li class="site-item"><a href="#" class="sitemain">机票</a>•<a href="#" class="siteright">12306</a></li>
+						<li class="site-item"><a href="#" class="sitemain">聚美优品</a></li>
+						<li class="site-item"><a href="#" class="sitemain">赶集网</a></li>
+						<li class="site-item"><a href="#" class="sitemain">易车网</a></li>
+						<li class="site-item"><a href="#" class="sitemain">萌主页</a>•<a href="#" class="siteright">动漫</a></li>
+						<li class="site-item"><a href="#" class="sitemain">爱卡汽车</a></li>
+						<li class="site-item"><a href="#" class="sitemain">美拍</a></li>
+						<li class="site-item"><a href="#" class="sitemain">唯品会</a></li>
+						<li class="site-item"><a href="#" class="sitemain">同程旅游</a></li>
+						<li class="site-item"><a href="#" class="sitemain">途牛旅游网</a></li>
+						<li class="site-item"><a href="#" class="sitemain">百度浏览器</a></li>
+						<li class="site-item"><a href="#" class="sitemain">太平洋汽车</a></li>
+						<li class="site-item"><a href="#" class="sitemain">艺龙网</a></li>
+					</ul>
+				</div>
+				<div class="rightlist" id="sitebot">
+					<ul>
+						<li class="site-item"><a href="#" class="sitemain">苏宁易购</a></li>
+						<li class="site-item"><a href="#" class="sitemain">国美在线</a></li>
+						<li class="site-item"><a href="#" class="sitemain">世纪佳缘</a></li>
+						<li class="site-item"><a href="#" class="sitemain">彩票开奖</a></li>
+						<li class="site-item"><a href="#" class="sitemain">爱淘宝</a></li>
+						<li class="site-item"><a href="#" class="sitemain">飞牛网商城</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- end 右边 -->
+		</div>
+	</div>
+	<script type="text/javascript" src="js/webskin.js"></script>
+</body>
+</html>
